@@ -1,18 +1,246 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Лет ми спик фром май харт</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <!-- Поле для фильтрации по городу -->
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
+<head>
+    <meta charset="utf-8">
+    <title>Лет ми спик фром май харт</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Поле для фильтрации по городу -->
+<input
+        type="text"
+        placeholder="Город отправления"
+        value=""
+        onkeyup="this.setAttribute('value', this.value)">
 
-        <!-- Здесь применять вашу самую сильную магию -->
-    </body>
+<table class="tabloid">
+    <thead>
+    <tr class="tabloid__row">
+        <td class="tabloid__cell  tabloid__cell--1">Тип рейса</td>
+        <td class="tabloid__cell">№ рейса</td>
+        <td class="tabloid__cell">Авиакомпания</td>
+        <td class="tabloid__cell">Логотип авиакомпании</td>
+        <td class="tabloid__cell">Тип воздушного судна</td>
+        <td class="tabloid__cell">Аэропорт назначения</td>
+        <td class="tabloid__cell">Плановое время вылета или прилёта</td>
+        <td class="tabloid__cell">Номер терминала</td>
+        <td class="tabloid__cell">Статус рейса</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell  tabloid__cell--1"><img src="img/types/start_fly.gif"></td>
+        <td class="tabloid__cell">667</td>
+        <td class="tabloid__cell">Летай с Ашотом</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/uzb.png">
+        </td>
+        <td class="tabloid__cell">Старенький самолёт</td>
+        <td class="tabloid__cell">Кольцово</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-10-23">2014-10-23</time>
+        </td>
+        <td class="tabloid__cell">9</td>
+        <td class="tabloid__cell">Вылетел</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/end_fly.gif"></td>
+        <td class="tabloid__cell">679</td>
+        <td class="tabloid__cell">Яндекс авиалинии</td>
+        <td class="tabloid__cell">
+            <img  class="tabloid__cell-logo" src="img/log/ya.png">
+        </td>
+        <td class="tabloid__cell">Новенький самолёт</td>
+        <td class="tabloid__cell">Шереметьево</td>
+        <td class="tabloid__cell">
+            <time  class="tabloid__cell-logo" datetime="2014-10-24">2014-10-24</time>
+        </td>
+        <td class="tabloid__cell">7</td>
+        <td class="tabloid__cell">Приземлился</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/error.png"></td>
+        <td class="tabloid__cell">791</td>
+        <td class="tabloid__cell">Компания аэрофлот</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/aero.png">
+        </td>
+        <td class="tabloid__cell">Обычный самолёт</td>
+        <td class="tabloid__cell">Самарский аэропорт</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-10-29">2014-10-29</time>
+        </td>
+        <td class="tabloid__cell">10</td>
+        <td class="tabloid__cell">Отменён</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/end_fly.gif"></td>
+        <td class="tabloid__cell">901</td>
+        <td class="tabloid__cell">Добролёт аэрофлот</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/Dobrolet-logo.png">
+        </td>
+        <td class="tabloid__cell">Обычный самолёт</td>
+        <td class="tabloid__cell">Кольцово</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-11-02">2014-11-02</time>
+        </td>
+        <td class="tabloid__cell">5</td>
+        <td class="tabloid__cell">Летит</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/error.png"></td>
+        <td class="tabloid__cell">951</td>
+        <td class="tabloid__cell">Внуковский аэрофлот</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/vnuk.png">
+        </td>
+        <td class="tabloid__cell">Старый самолёт</td>
+        <td class="tabloid__cell">Бабушкин аэропорт</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-11-05">2014-11-05</time>
+        </td>
+        <td class="tabloid__cell">1</td>
+        <td class="tabloid__cell">Отменён</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/start_fly.gif"></td>
+        <td class="tabloid__cell">697</td>
+        <td class="tabloid__cell">Летай с Ашотом</td>
+        <td class="tabloid__cell">
+            <img  class="tabloid__cell-logo"src="img/log/uzb.png">
+        </td>
+        <td class="tabloid__cell">Новенький самолёт</td>
+        <td class="tabloid__cell">Шереметьево</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-10-21">2014-10-21</time>
+        </td>
+        <td class="tabloid__cell">13</td>
+        <td class="tabloid__cell">Вылетел</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/error.png"></td>
+        <td class="tabloid__cell">901</td>
+        <td class="tabloid__cell">Яндекс авиалинии</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/ya.png">
+        </td>
+        <td class="tabloid__cell">Старый самолёт</td>
+        <td class="tabloid__cell">Кольцово</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-11-05">2014-11-05</time>
+        </td>
+        <td class="tabloid__cell">10</td>
+        <td class="tabloid__cell">Отменён</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/end_fly.gif"></td>
+        <td class="tabloid__cell">979</td>
+        <td class="tabloid__cell">Внуковский аэрофлот</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/vnuk.png">
+        </td>
+        <td class="tabloid__cell">Просто самолёт</td>
+        <td class="tabloid__cell">Шереметьево</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-10-27">2014-10-27</time>
+        </td>
+        <td class="tabloid__cell">1</td>
+        <td class="tabloid__cell">По расписанию</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/start_fly.gif"></td>
+        <td class="tabloid__cell">1001</td>
+        <td class="tabloid__cell">Добролёт аэрофлот</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/Dobrolet-logo.png">
+        </td>
+        <td class="tabloid__cell">Плохой самолёт</td>
+        <td class="tabloid__cell">Кольцово</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-11-02">2014-11-02</time>
+        </td>
+        <td class="tabloid__cell">8</td>
+        <td class="tabloid__cell">Вылетел</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/start_fly.gif"></td>
+        <td class="tabloid__cell">701</td>
+        <td class="tabloid__cell">Компания аэрофлот</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/aero.png">
+        </td>
+        <td class="tabloid__cell">Обычный самолёт</td>
+        <td class="tabloid__cell">Самарский аэропорт</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-10-29">2014-10-29</time>
+        </td>
+        <td class="tabloid__cell">10</td>
+        <td class="tabloid__cell">Регистрация</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/error.png"></td>
+        <td class="tabloid__cell">999</td>
+        <td class="tabloid__cell">Яндекс авиалинии</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/ya.png">
+        </td>
+        <td class="tabloid__cell">Старый самолёт</td>
+        <td class="tabloid__cell">Кольцово</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-11-09">2014-11-09</time>
+        </td>
+        <td class="tabloid__cell">10</td>
+        <td class="tabloid__cell">Отменён</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/end_fly.gif"></td>
+        <td class="tabloid__cell">911</td>
+        <td class="tabloid__cell">Добролёт аэрофлот</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/Dobrolet-logo.png">
+        </td>
+        <td class="tabloid__cell tabloid__cell--1">Обычный самолёт</td>
+        <td class="tabloid__cell">Кольцово</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-11-09">2014-11-09</time>
+        </td>
+        <td class="tabloid__cell">5</td>
+        <td class="tabloid__cell">Летит</td>
+    </tr>
+    <tr class="tabloid__body-row">
+        <td class="tabloid__cell tabloid__cell--1"><img src="img/types/start_fly.gif"></td>
+        <td class="tabloid__cell">1097</td>
+        <td class="tabloid__cell">Летай с Ашотом</td>
+        <td class="tabloid__cell">
+            <img class="tabloid__cell-logo" src="img/log/uzb.png">
+        </td>
+        <td class="tabloid__cell">Новенький самолёт</td>
+        <td class="tabloid__cell">Шереметьево</td>
+        <td class="tabloid__cell">
+            <time datetime="2014-10-25">2014-10-25</time>
+        </td>
+        <td class="tabloid__cell">15</td>
+        <td class="tabloid__cell">Посадка закончена</td>
+    </tr>
+    </tbody>
+</table>
+
+<form action="" class="form">
+    <input name="email"
+        type="email"
+        placeholder="email"
+        class="form__email"
+        required>
+    <input name="phone"
+        type="tel"
+        placeholder="Ваш номер телефона"
+        pattern="^(\+7|8)\d{10}$"
+        class="form__phone"
+        required>
+    <button type="submit" class="form__button">Отправить</button>
+</form>
+
+<!-- Здесь применять вашу самую сильную магию -->
+</body>
 </html>

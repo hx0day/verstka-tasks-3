@@ -1,0 +1,94 @@
+.tabloid
+{
+
+}
+
+.tabloid__head
+{
+
+}
+
+.tabloid__body
+{
+
+}
+
+.tabloid__body-row
+{
+    background-color: black;
+    color: white;
+}
+
+.tabloid__body-row:nth-child(2n)
+{
+    opacity: 0.7;
+}
+
+.tabloid__body-row:hover
+{
+    opacity: 0.5;
+}
+
+.tabloid__cell
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+}
+
+.tabloid__cell
+{
+    position: relative;
+    z-index: 1;
+}
+
+.tabloid__cell:hover::after
+{
+    content: "";
+    position: absolute;
+    background: white;
+    opacity: 0.5;
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}
+
+.tabloid__cell-logo
+{
+    height: 40px;
+    width: auto;
+}
+
+.form__button
+{
+    margin: 0 auto;
+    display: none;
+}
+
+.form
+{
+    z-index: 10;
+    text-align: center;
+}
+
+.form__email,
+.form__phone
+{
+    display: block;
+    margin: 5px auto;
+
+}
+
+.form__email:valid,
+.form__phone:valid
+{
+    background-color: #ddffdd;
+}
+
+.form:valid .form__button
+{
+    display: block;
+}
